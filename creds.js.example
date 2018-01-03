@@ -1,0 +1,8 @@
+{
+  "bind": {
+  },
+  "cloudflare.com":{
+    "apikey": "your-api-key",
+    "apiuser": "your@email.com"
+  }
+}
