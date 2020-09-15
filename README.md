@@ -4,6 +4,15 @@
 
 Here you will find a bunch of examples I been collecting from different places, check [Resources](#resources) for more details.
 
+## Install
+
+Add plugin to [asdf](https://github.com/asdf-vm/asdf).
+
+```bash
+asdf plugin-add dnscontrol https://github.com/beardix/asdf-dnscontrol.git
+asdf install # takes dnscontrol version from .tool-versions
+```
+
 ## Examples
 
 1. Simple Bind zone
@@ -15,17 +24,10 @@ Here you will find a bunch of examples I been collecting from different places, 
 
 ## Resources
 
-*Various resources, such as release blog post, documentation, github repository and conference presentation.*
-
 * [Introducing DNSControl](https://blog.serverfault.com/2017/04/11/introducing-dnscontrol-dns-as-code-has-arrived/)
+* [Presentation](https://www.usenix.org/conference/srecon17americas/program/presentation/peterson)
 * [Documentation](https://stackexchange.github.io/dnscontrol/)
 * [Repository](https://github.com/StackExchange/dnscontrol)
-* [Presentation](https://www.usenix.org/conference/srecon17americas/program/presentation/peterson)
-
-## Thanks
-
-* StackExchange
-* erasys & Heisenberg team
 
 ## Quote
 
