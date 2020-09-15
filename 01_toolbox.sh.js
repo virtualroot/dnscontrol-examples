@@ -1,7 +1,7 @@
 // 01_toolbox.sh.js
-// First define registrar & providers 
+// First define registrar & providers
 
-// No registrar 
+// No registrar
 var REG_NONE = NewRegistrar('none', 'NONE');
 
 // BIND Provider
@@ -15,8 +15,8 @@ var DNS_BIND = NewDnsProvider('bind', 'BIND', {
     'minttl': 1440,
   },
   'default_ns': [
-        'ns1.toolbox.sh.',
-        'ns2.toolbox.sh.',
+    'ns1.toolbox.sh.',
+    'ns2.toolbox.sh.',
   ]
 });
 

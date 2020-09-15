@@ -15,8 +15,8 @@ var DNS_BIND = NewDnsProvider('bind', 'BIND', {
     'minttl': 1440,
   },
   'default_ns': [
-        'ns1.toolbox.sh.',
-        'ns2.toolbox.sh.',
+    'ns1.toolbox.sh.',
+    'ns2.toolbox.sh.',
   ]
 });
 
@@ -31,5 +31,5 @@ D("toolbox.sh", REG_NONE, DnsProvider(DNS_BIND), DnsProvider(CFLARE),
   CNAME("no-cloud","toolbox.sh.", CF_PROXY_OFF),
   MX("@",10,"mail.toolbox.sh.")
 
-  CF_REDIRECT("old.toolbox.sh/*", "https://toolbox.sh/$2")
+  CF_REDIRECT("blog.toolbox.sh/*", "https://toolbox.sh/blog/$2")
 )

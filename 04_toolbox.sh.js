@@ -15,8 +15,8 @@ var DNS_BIND = NewDnsProvider('bind', 'BIND', {
     'minttl': 1440,
   },
   'default_ns': [
-        'ns1.toolbox.sh.',
-        'ns2.toolbox.sh.',
+    'ns1.toolbox.sh.',
+    'ns2.toolbox.sh.',
   ]
 });
 
@@ -26,8 +26,8 @@ var CFLARE = NewDnsProvider('cloudflare.com','CLOUDFLAREAPI', {"manage_redirects
 var stage_subdomains = [];
 
 for(var i=100;i<=123;++i){
-    stage_subdomains.push( A('s'+i+'', '192.0.2.'+i));
-    stage_subdomains.push( A('*.s'+i+'', '192.0.2.'+i));
+  stage_subdomains.push( A('s'+i+'', '192.0.2.'+i));
+  stage_subdomains.push( A('*.s'+i+'', '192.0.2.'+i));
 }
 
 D("toolbox.sh", REG_NONE, DnsProvider(DNS_BIND), DnsProvider(CFLARE),
